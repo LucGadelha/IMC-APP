@@ -1,30 +1,85 @@
-# App de conta de imc
+# IMC-APP
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+Aplicativo simples desenvolvido com React Native para calcular o Índice de Massa Corporal (IMC). Permite que usuários insiram seu peso e altura para obter o valor do IMC e a classificação correspondente.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/lucas-gadelhas-projects/v0-app-de-conta-de-imc)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/n4n2hDu6yJ9)
+## 📱 Demonstração
 
-## Overview
+![Demonstração do IMC-APP](./assets/imc-app-demo.gif)
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+## 🚀 Tecnologias Utilizadas
 
-## Deployment
+* [React Native](https://reactnative.dev/)
+* [Expo](https://expo.dev/)
+* [TypeScript](https://www.typescriptlang.org/)
 
-Your project is live at:
+## ⚙️ Instalação
 
-**[https://vercel.com/lucas-gadelhas-projects/v0-app-de-conta-de-imc](https://vercel.com/lucas-gadelhas-projects/v0-app-de-conta-de-imc)**
+1. Clone o repositório:
 
-## Build your app
+   ```bash
+   git clone https://github.com/LucGadelha/IMC-APP.git
+   cd IMC-APP
+   ```
 
-Continue building your app on:
+2. Instale as dependências:
 
-**[https://v0.dev/chat/projects/n4n2hDu6yJ9](https://v0.dev/chat/projects/n4n2hDu6yJ9)**
+   ```bash
+   npm install
+   # ou
+   yarn install
+   ```
 
-## How It Works
+3. Inicie o projeto:
 
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+   ```bash
+   npm start
+   # ou
+   yarn start
+   ```
+
+4. Abra o aplicativo no seu dispositivo físico ou emulador usando o Expo Go.
+
+## 🧽 Como Funciona
+
+O usuário insere seu peso (em kg) e altura (em metros). O aplicativo calcula o IMC utilizando a fórmula:
+
+```typescript
+IMC = peso / (altura * altura)
+```
+
+Com base no valor calculado, o aplicativo exibe a classificação correspondente:
+
+* Abaixo de 18.5: Abaixo do peso
+* 18.5 – 24.9: Peso normal
+* 25.0 – 29.9: Sobrepeso
+* 30.0 – 34.9: Obesidade grau I
+* 35.0 – 39.9: Obesidade grau II
+* 40.0 ou mais: Obesidade grau III
+
+## 📁 Estrutura do Projeto
+
+```bash
+IMC-APP/
+├── assets/             # Imagens e recursos estáticos
+├── components/         # Componentes reutilizáveis
+├── screens/            # Telas principais do aplicativo
+├── App.tsx             # Componente principal
+├── package.json        # Dependências e scripts
+└── README.md           # Documentação do projeto
+```
+
+## 🧪 Testes
+
+Este projeto não possui testes automatizados no momento. Contribuições para adicionar testes são bem-vindas!
+
+## 🤝 Contribuindo
+
+Contribuições são sempre bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests.
+
+## 📄 Licença
+
+Este projeto está licenciado sob a [MIT License](LICENSE).
+
+---
+
+Para mais informações, acesse o repositório oficial: [https://github.com/LucGadelha/IMC-APP](https://github.com/LucGadelha/IMC-APP)
