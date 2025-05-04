@@ -4,7 +4,7 @@ Aplicativo simples desenvolvido com React Native para calcular o Índice de Mass
 
 ## 📱 Demonstração
 
-![Demonstração do IMC-APP](./assets/imc-app-demo.gif)
+[Demonstração do IMC-APP](https://v0-app-de-conta-de-imc.vercel.app)
 
 ## 🚀 Tecnologias Utilizadas
 
